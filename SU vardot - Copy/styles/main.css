@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url(../assets/fonts/fonts.css);
 * {
   padding: 0;
   margin: 0;
@@ -14,5 +14,75 @@ a {
 
 ul {
   margin-bottom: 0 !important;
+}
+
+.link-cont {
+  position: relative;
+  font-size: 24px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.link-wrapper {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+
+.inner-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  height: 1.5px;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  height: 1.5px;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.hover:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.hover:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 /*# sourceMappingURL=main.css.map */

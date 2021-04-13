@@ -1,11 +1,25 @@
+@import url(../assets/fonts/fonts.css);
+@import url(./main.css);
 #demo .carousel-inner {
-  height: 75vh;
+  height: 78vh;
+}
+
+@media only screen and (max-width: 992px) {
+  #demo .carousel-inner {
+    height: 40vh;
+  }
 }
 
 #demo .carousel-inner img {
   background-size: cover;
   width: 100%;
-  height: 74%;
+  height: 78%;
+}
+
+@media only screen and (max-width: 992px) {
+  #demo .carousel-inner img {
+    height: 39%;
+  }
 }
 
 .carousel-item {
@@ -34,15 +48,39 @@
 
 @media only screen and (max-width: 992px) {
   .overlay {
-    background-color: rgba(2, 26, 78, 0.75);
+    color: #021a4e;
+    background-color: transparent;
     padding: 1rem 1rem;
     color: white;
     position: absolute;
-    top: 59%;
+    top: 0%;
+    left: 16%;
     text-align: center;
-    width: unset;
     height: unset;
-    right: auto;
+    max-width: 15rem;
+    font-weight: bold;
   }
+}
+
+.overlay h1 {
+  font-family: 'Crimson Text', serif;
+}
+
+@media only screen and (max-width: 992px) {
+  .overlay h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 31px;
+    text-align: start;
+  }
+}
+
+/* .carousel-indicators li {
+     background-color: #fff !important;
+ }
+  .active {
+    background-color: red !important;
+}*/
+.carousel-indicators {
+  bottom: 30px !important;
 }
 /*# sourceMappingURL=carousel.css.map */
