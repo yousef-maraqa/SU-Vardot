@@ -2,6 +2,12 @@ header .inner-container {
   margin: 3.3vh 0;
 }
 
+@media only screen and (max-width: 992px) {
+  header .inner-container {
+    margin: 0;
+  }
+}
+
 header .social-links i {
   width: 24px;
   height: 24px;
@@ -32,6 +38,12 @@ header nav {
   background-color: #021a4e !important;
 }
 
+@media only screen and (max-width: 992px) {
+  header nav {
+    background-color: white !important;
+  }
+}
+
 header nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +62,12 @@ header nav .nav-links .nav-link {
   color: white !important;
   font-size: 14px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  header nav .nav-links .nav-link {
+    color: #021a4e !important;
+  }
 }
 
 .search {
@@ -171,6 +189,7 @@ header nav .nav-links .nav-link {
 @media only screen and (max-width: 768px) {
   .search.open {
     background-color: #fff;
+    margin: 1.5rem 0;
   }
 }
 

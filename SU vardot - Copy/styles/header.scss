@@ -4,6 +4,13 @@ header{
 
     .inner-container{
         margin: 3.3vh 0;
+        @media only screen and (max-width: 992px) {
+            margin:0;
+    
+        
+        }
+
+
     }
     .social-links{
         i{
@@ -38,6 +45,12 @@ header{
     nav{
 
         background-color: #021a4e !important;
+        
+    @media only screen and (max-width: 992px) {
+        background-color: white !important;
+
+    
+    }
         .nav-links{
             display: flex;
     width: 80%;
@@ -49,9 +62,16 @@ header{
         color: white !important;
         font-size: 14px;
         font-weight: 600;
+        @media only screen and (max-width: 992px) {
+         color:  #021a4e !important;
+    
+        
+        }
     }
         }
     }
+
+    
 }
 
 //search icon
@@ -142,6 +162,7 @@ $textColor:  #b6b6b6;
         box-shadow: 0 10px 36px -2px rgba(#000, .18);
         @media only screen and (max-width: 768px) {
             background-color: #fff;
+            margin: 1.5rem 0;
         }
         svg {
             opacity: .4;
@@ -175,6 +196,8 @@ $textColor:  #b6b6b6;
         }
     }
 }
+
+
 
  
  
