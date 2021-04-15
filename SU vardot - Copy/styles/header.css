@@ -183,8 +183,8 @@ header nav .nav-links .nav-link {
   border-radius: 8px;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
-  -webkit-box-shadow: 0 10px 36px -2px rgba(0, 0, 0, 0.18);
-          box-shadow: 0 10px 36px -2px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0 0px 6px -2px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0px 6px -2px rgba(0, 0, 0, 0.18);
 }
 
 @media only screen and (max-width: 768px) {

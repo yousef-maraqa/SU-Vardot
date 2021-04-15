@@ -12,6 +12,17 @@ a {
   text-decoration: none !important;
 }
 
+.title {
+  color: #021a4e;
+  border-bottom: 3px solid #021a4e;
+}
+
+.title .title-text {
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
 ul {
   margin-bottom: 0 !important;
 }
@@ -26,7 +37,7 @@ ul {
   position: relative;
   text-decoration: none;
   padding: 10px 0;
-  color: #fff;
+  color: #020000;
 }
 
 .link-wrapper {

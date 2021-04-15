@@ -27,15 +27,19 @@
     background-size: cover;
  
 }
+ 
 
 .carousel-indicators li{
 
 
-    width: 13px !important;
-    height: 13px !important;
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 50% !important;
-}
+    background-color:#fff !important; 
+     border: solid 1px #f3f3f3;
 
+}
+ 
  .overlay{
      width: 30.688rem;
      height: 20.125rem;
@@ -48,12 +52,12 @@
     @media only screen and (max-width: 992px) {
 
         color: #021a4e;
-        background-color: transparent;
+       
         padding: 1rem 1rem;
         color: white;
         position: absolute;
-        top: 0%;
-        left: 16%;
+        top: 25%;
+        left: 25%;
         text-align: center;
        
         height: unset;
@@ -65,10 +69,13 @@
     }
 h1{
     font-family: 'Crimson Text', serif;
+    line-height: 1.63;
+    letter-spacing: 1px;
     @media only screen and (max-width: 992px) {
         font-family: 'Crimson Text', serif;
-        font-size: 31px;
-        text-align: start;
+        font-size: 17px;
+        text-align: center;
+   
 
     }
 }
@@ -81,5 +88,10 @@ h1{
     background-color: red !important;
 }*/
 .carousel-indicators{
-    bottom: 30px !important;
+    bottom: 15px !important;
+}
+
+.carousel-indicators .active {
+ 
+    background-color: transparent !important;
 }
