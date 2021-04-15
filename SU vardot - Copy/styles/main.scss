@@ -43,7 +43,21 @@ section{
     padding: 10px 0;
     color: #fff;
 }
-
+.content-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0.62rem 0;
+    color: #021a4f;
+    letter-spacing: 0.4px;
+}
+.content-summary{
+    font-style: normal;
+  line-height: 1.63;
+}
+.details{
+    line-height: 1.64;
+font-size: 16px;
+}
 .link-wrapper {
     position: relative;
     display: block;
@@ -54,6 +68,37 @@ section{
     position: relative;
     display: inline-block;
 }
+a:hover{
+    color: unset !important;
+}
+
+ 
+.read-more{
+    margin-bottom: 1.25rem;
+    text-align: end ;
+    a{
+       color:  #021a4f;
+       font-size: 14px;
+       font-weight: bold;
+       
+     
+      
+    }
+    i{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        transition: 0.5s ease;
+      
+    }
+
+}
+ .read-more:hover i{
+    visibility: visible;
+    opacity: 1;
+    margin-left:0.4rem ;
+   
+ }
 
 .hover {
     &:before {

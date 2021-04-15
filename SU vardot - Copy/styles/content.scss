@@ -34,37 +34,8 @@
 
         .news-block{
             margin-top: 1.25rem;
-            .news-title{
-                font-size: 16px;
-                font-weight: 600;
-                margin-top: 0.625rem;
-                color: #021a4f;
-            }
-
-            .read-more{
-                margin-bottom: 1.25rem;
-                a{
-                   color:  #021a4f;
-                   font-size: 14px;
-                   font-weight: bold;
-                 
-                  
-                }
-                i{
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: visibility 0s, opacity 0.5s linear;
-                    transition: 0.5s ease;
-                  
-                }
-
-            }
-            .read-more:hover i{
-                visibility: visible;
-                opacity: 1;
-                margin-left:0.4rem ;
-               
-            }
+          
+       
 
             .date{
                 color: #021a4f;
@@ -216,5 +187,19 @@
             font-weight: bold;
 
         }
+    }
+
+
+    .card{
+        @media only screen and (max-width: 992px) {
+            margin-bottom: 3rem;
+        }
+    }
+    .line{
+        width: 1.9px;
+        height: 19px;
+       
+        background-color:#979797 ;
+         
     }
 }
