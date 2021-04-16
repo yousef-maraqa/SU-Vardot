@@ -1,1 +1,47 @@
-@import url(./main.css);
+ 
+
+footer{
+background-color: #021a4e;
+h5{
+    color: #e4c800;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 0.93px;
+
+}
+li{
+    margin: 0.6rem 0;
+    a{
+        letter-spacing: 0.82px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        &:hover{
+            color: rgb(223, 223, 223) !important;
+        }
+    }
+}
+
+.footer-col{
+    display: flex;
+    align-items: start;
+    flex-flow: column;
+    border-left: solid 1px #4d4d4d;
+    padding-left: 1rem;
+    margin: 3.875rem 0;
+    text-align: start;
+   
+}
+.copyright{
+    color: #ffffff;
+    font-size: 11px;
+    background-color: #223663
+
+    ;
+}
+i{
+    color: white;
+    margin-right: 0.7rem;
+    font-size: 14px;
+}
+}

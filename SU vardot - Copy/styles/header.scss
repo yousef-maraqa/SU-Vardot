@@ -1,4 +1,4 @@
-@import url(./main.css);
+@import url(./main.scss);
 
 header{
 
@@ -199,5 +199,43 @@ $textColor:  #b6b6b6;
 
 
 
- 
- 
+ //hover underline
+.hover {
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+        height: 2px;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: bottom left;
+
+        transition: transform 0.3s;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left : 50%;
+        height: 2px;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+
+        transition: transform 0.3s;
+    }
+
+    &:hover {
+        &:before {
+            transform: scaleX(1);
+        }
+
+        &:after {
+            transform: scaleX(1);
+        }
+    }
+}

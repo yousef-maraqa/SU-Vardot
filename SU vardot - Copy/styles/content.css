@@ -205,4 +205,78 @@
   height: 19px;
   background-color: #979797;
 }
+
+#apply .apply-img {
+  background: url(../assets/apply/66-b-08-d-136-d-3058544-e-02-fa-236-f-7-ae-10-c@3x.png) no-repeat;
+  height: 34.375rem;
+  width: 100%;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+#apply .apply-title {
+  text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.59;
+  text-align: center;
+  color: #021a4f;
+  position: absolute;
+  top: 18%;
+  text-align: center;
+  left: 19%;
+  max-width: 76rem;
+}
+
+#apply .main-btn {
+  position: absolute;
+  top: 64%;
+  left: 39%;
+}
+
+#form .form-box {
+  margin: 0 3.8rem;
+  padding: 5rem 6.25rem;
+  background: #f7f7f7;
+}
+
+@media only screen and (max-width: 992px) {
+  #form .form-box {
+    margin: 0;
+    padding: 5rem 1.25rem;
+  }
+}
+
+#form ::-webkit-input-placeholder {
+  color: #9f9f9f;
+}
+
+#form :-ms-input-placeholder {
+  color: #9f9f9f;
+}
+
+#form ::-ms-input-placeholder {
+  color: #9f9f9f;
+}
+
+#form ::placeholder {
+  color: #9f9f9f;
+}
+
+#form .main-btn {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#form .submit {
+  margin-top: 3.5rem;
+}
+
+#form .submit .main-btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.875rem 2.5rem;
+  margin-top: 14rem;
+  padding: 0.875rem 2.5rem;
+}
 /*# sourceMappingURL=content.css.map */

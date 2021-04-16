@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -77,6 +78,31 @@ a:hover {
   color: unset !important;
 }
 
+.title-wrapper {
+  margin-bottom: 1.875rem;
+}
+
+.title-wrapper .title-m {
+  border-bottom: solid 2px #021a4e;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: #021a4f;
+}
+
+.main-btn {
+  padding: 1.5rem 3.25rem;
+  background-color: #021a4e;
+  font-size: 54px;
+  font-weight: 800;
+  color: #e4c800;
+  line-height: 1.06;
+}
+
+.main-btn:hover {
+  color: #ffe100 !important;
+}
+
 .read-more {
   margin-bottom: 1.25rem;
   text-align: end;
@@ -101,51 +127,5 @@ a:hover {
   visibility: visible;
   opacity: 1;
   margin-left: 0.4rem;
-}
-
-.hover:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 50%;
-  height: 1.5px;
-  background-color: #fff;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.hover:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 50%;
-  height: 1.5px;
-  background-color: #fff;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.hover:hover:before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.hover:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 /*# sourceMappingURL=main.css.map */

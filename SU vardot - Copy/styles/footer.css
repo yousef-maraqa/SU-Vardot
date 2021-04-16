@@ -1,2 +1,55 @@
-@import url(./main.css);
+footer {
+  background-color: #021a4e;
+}
+
+footer h5 {
+  color: #e4c800;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 0.93px;
+}
+
+footer li {
+  margin: 0.6rem 0;
+}
+
+footer li a {
+  letter-spacing: 0.82px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer li a:hover {
+  color: #dfdfdf !important;
+}
+
+footer .footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border-left: solid 1px #4d4d4d;
+  padding-left: 1rem;
+  margin: 3.875rem 0;
+  text-align: start;
+}
+
+footer .copyright {
+  color: #ffffff;
+  font-size: 11px;
+  background-color: #223663;
+}
+
+footer i {
+  color: white;
+  margin-right: 0.7rem;
+  font-size: 14px;
+}
 /*# sourceMappingURL=footer.css.map */
