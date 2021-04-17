@@ -27,6 +27,9 @@ li{
     align-items: start;
     flex-flow: column;
     border-left: solid 1px #4d4d4d;
+    @media only screen and (max-width: 768px) {
+        border-left: solid 0px transparent;
+    }
     padding-left: 1rem;
     margin: 3.875rem 0;
     text-align: start;

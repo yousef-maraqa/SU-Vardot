@@ -1,4 +1,10 @@
 @import url(./main.scss);
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  outline: none;
+}
+
 header .inner-container {
   margin: 3.3vh 0;
 }
@@ -281,5 +287,84 @@ header nav .nav-links .nav-link {
 .hover:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+#phone-search {
+}
+
+#phone-search .card {
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+}
+
+#phone-search .form-control {
+  border-radius: 7px;
+  border: 1.5px solid #E3E6ED;
+}
+
+#phone-search input.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1.5px solid #E3E6ED;
+  background-color: #F7F8FD;
+  letter-spacing: 1px;
+}
+
+#phone-search .btn-primary {
+  background-color: #5878FF !important;
+  border-radius: 7px;
+}
+
+#phone-search .btn-primary:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#phone-search .text {
+  font-size: 13px;
+  color: #9CA1A4;
+}
+
+#phone-search .price {
+  background: #F5F8FD;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 97px;
+}
+
+#phone-search .flex-row {
+  border: 1px solid #F2F2F4;
+  border-radius: 10px;
+  margin: 0 1px 0;
+}
+
+#phone-search .flex-column p {
+  font-size: 14px;
+}
+
+#phone-search span.mb-2 {
+  font-size: 12px;
+  color: #8896BD;
+}
+
+#phone-search h5 span {
+  color: #869099;
+}
+
+@media screen and (max-width: 450px) {
+  #phone-search .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #phone-search .price {
+    border: none;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=header.css.map */
