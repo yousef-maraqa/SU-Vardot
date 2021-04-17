@@ -47,6 +47,12 @@ footer .footer-col {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  footer .footer-col {
+    margin: 1.875rem 0;
+  }
+}
+
 footer .copyright {
   color: #ffffff;
   font-size: 11px;
@@ -71,5 +77,10 @@ footer .Logo {
 
 footer .follow-us {
   margin: 2rem 0;
+}
+
+footer .social-links i {
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
 }
 /*# sourceMappingURL=footer.css.map */
