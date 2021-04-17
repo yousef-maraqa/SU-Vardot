@@ -52,4 +52,18 @@ footer i {
   margin-right: 0.7rem;
   font-size: 14px;
 }
+
+footer .how-to li {
+  margin-bottom: 1.2rem;
+}
+
+footer .Logo {
+  width: 8.75rem;
+  height: 3.125rem;
+  margin: 2rem 0;
+}
+
+footer .follow-us {
+  margin: 2rem 0;
+}
 /*# sourceMappingURL=footer.css.map */
