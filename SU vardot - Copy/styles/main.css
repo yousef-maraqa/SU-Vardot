@@ -60,7 +60,7 @@ section {
 
 .details {
   line-height: 1.64;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .link-wrapper {
@@ -115,7 +115,6 @@ a:hover {
 }
 
 .read-more i {
-  visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 0s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
