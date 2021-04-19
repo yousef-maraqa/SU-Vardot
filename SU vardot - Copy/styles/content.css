@@ -74,6 +74,7 @@
 
 #news .blogs .news-border:last-child .read-more {
   margin-left: 18rem;
+  margin-bottom: 0;
 }
 
 .column {
@@ -231,6 +232,10 @@
   width: 1.9px;
   height: 19px;
   background-color: #979797;
+}
+
+#events .read-more {
+  margin-bottom: 0;
 }
 
 #apply .apply-img {

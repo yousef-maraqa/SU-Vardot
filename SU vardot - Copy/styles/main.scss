@@ -115,7 +115,9 @@ a:hover{
     i{
 
         opacity: 0;
-        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+        width: 0;
+        transition: visibility 0.5s ease, opacity 0.5s ease;
         transition: 0.5s ease;
       
     }
@@ -124,7 +126,21 @@ a:hover{
  .read-more:hover i{
     visibility: visible;
     opacity: 1;
+    width: 14px;
     margin-left:0.4rem ;
    
  }
 
+//scro top
+.scroll-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    background-color: #e4c800;
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 60px;
+   
+}
