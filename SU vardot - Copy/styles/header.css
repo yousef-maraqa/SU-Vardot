@@ -6,7 +6,7 @@
 }
 
 header .inner-container {
-  margin: 3.3vh 0;
+  margin: 2vh 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -29,7 +29,7 @@ header .social-links .social-links:nth-child(5) {
 }
 
 header .social-links li {
-  margin: 0 1vh;
+  margin: 0 0.313rem;
 }
 
 header .social-links .search-icon {
@@ -75,6 +75,10 @@ header nav .nav-links .nav-link {
   header nav .nav-links .nav-link {
     color: #021a4e !important;
   }
+}
+
+header nav .search-box-mb button:hover {
+  background-color: #021a4e;
 }
 
 .search {
@@ -243,45 +247,21 @@ header nav .nav-links .nav-link {
           transition-delay: .75s;
 }
 
-.hover:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 50%;
-  height: 2px;
-  background-color: white;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
 .hover:after {
   content: '';
   position: absolute;
   bottom: 0;
+  left: 0;
   right: 0;
-  left: 50%;
+  width: 100%;
   height: 2px;
-  background-color: white;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
+  background-color: #fff;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.hover:hover:before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 
 .hover:hover:after {
@@ -366,5 +346,11 @@ header nav .nav-links .nav-link {
     border: none;
     margin: 0 auto;
   }
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 /*# sourceMappingURL=header.css.map */

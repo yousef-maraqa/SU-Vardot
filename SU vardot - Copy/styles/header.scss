@@ -6,14 +6,10 @@
 header{
 
     .inner-container{
-        margin: 3.3vh 0;
+        margin: 2vh 0;
         @media only screen and (max-width: 992px) {
             margin:0;
-    
-        
         }
-
-
     }
     .social-links{
         i{
@@ -32,7 +28,7 @@ header{
 
 
         li{
-            margin: 0 1vh;
+            margin: 0 0.313rem;
         }
 
         .search-icon{
@@ -71,6 +67,15 @@ header{
         
         }
     }
+        }
+
+
+        .search-box-mb{
+            button{
+                &:hover{
+                    background-color: #021a4e ;
+                }
+            }
         }
     }
 
@@ -203,42 +208,25 @@ $textColor:  #b6b6b6;
 
 
  //hover underline
-.hover {
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 50%;
-        height: 2px;
-        background-color: white;
-        transform: scaleX(0);
-        transform-origin: bottom left;
-
-        transition: transform 0.3s;
-    }
-
+ 
+.hover{ 
     &:after {
         content: '';
         position: absolute;
         bottom: 0;
+        left: 0;
         right: 0;
-        left : 50%;
+        width: 100%;
         height: 2px;
-        background-color: white;
         transform: scaleX(0);
-        transform-origin: bottom right;
+        background-color: #fff;
 
         transition: transform 0.3s;
     }
 
     &:hover {
-        &:before {
-            transform: scaleX(1);
-        }
-
         &:after {
-            transform: scaleX(1);
+            transform: scaleX(1);    
         }
     }
 }
@@ -320,4 +308,8 @@ h5 span {
     }
 }
 
+}
+.navbar {
+    position: sticky;
+    top: 0;;
 }

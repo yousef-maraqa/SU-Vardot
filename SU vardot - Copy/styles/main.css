@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -53,9 +52,15 @@ section {
   letter-spacing: 0.4px;
 }
 
+.content-title:hover {
+  color: #333333;
+}
+
 .content-summary {
   font-style: normal;
   line-height: 1.63;
+  overflow: hidden;
+  max-height: 52px;
 }
 
 .details {

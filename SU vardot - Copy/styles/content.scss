@@ -17,11 +17,11 @@
   -o-transition: all .5s ease;
   transition: all .5s ease;
   &:hover{
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2); /* IE 9 */ 
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */ 
+    transform: scale(1.1);
   }
         }
         div{
@@ -73,7 +73,7 @@
 
 
             .read-more{
-                margin-left: 18rem;
+                
                 margin-bottom: 0;
             }
 
@@ -184,6 +184,7 @@
 
 #events{
     .card{
+        height: 100%;
         .event-img{
            position: relative;
            
@@ -236,6 +237,8 @@
     .read-more{
       
         margin-bottom: 0;
+        margin-top: 2rem;
+        padding-bottom: 0.813rem;
         
     }
 

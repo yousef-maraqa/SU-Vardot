@@ -9,7 +9,7 @@ $mainYellow:#e4c800;
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+    
 }
 a{
    text-decoration: none !important;
@@ -51,10 +51,15 @@ section{
     margin: 0.62rem 0;
     color: #021a4f;
     letter-spacing: 0.4px;
+    &:hover{
+        color: lighten($color: #000000, $amount: 20%);
+    }
 }
 .content-summary{
     font-style: normal;
   line-height: 1.63;
+  overflow: hidden;
+  max-height: 52px;
 }
 .details{
     line-height: 1.64;

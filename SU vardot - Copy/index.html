@@ -176,12 +176,12 @@
                 >
               </li>
               <li class="nav-item">
-                <div class="search-box d-md-block d-lg-none">
+                <div class="search-box-mb d-md-block d-lg-none">
                  
                   <div class="input-group mt-4 mb-2">
                     <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button">Go</button>
+                      <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
                     </div>
                   </div>
                 </div>
@@ -341,7 +341,7 @@
                 <div class="col-md-12 pl-0 pr-0 news-border">
                   <div class="news-block ">
                    <div class="details">january 06,2017</div>
-                   <h1 class="text-capitalize content-title">Smart Exhibition Upends Classical Style</h1>
+                  <a href="#"><h1 class="text-capitalize content-title">Smart Exhibition Upends Classical Style</h1></a> 
                    <p class="content-summary">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
                    <div class="read-more  ">
                     <a class="text-uppercase  " href="#"
@@ -432,7 +432,7 @@
 
 
 <section id="events">
-  <div class="title-wrapper text-uppercase text-center"><span class=" title-m"> events</span></div>
+  <div class="title-wrapper text-uppercase text-center"><span class=" title-m">  </span></div>
   <div class="container">
   
     <div class="row">
@@ -449,7 +449,7 @@
                   </div>
                 </div>
 
-          <div class="card-body">
+          <div class="card-body pb-0  d-flex flex-column align-items-end justify-content-between">
            <div class="container event-content pr-0">
              <div class="row">
              <div class="time-place d-flex align-items-center justify-content-start">
@@ -461,13 +461,14 @@
              <div class="content-summary">Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</div>
        
            </div>
-           <div class="read-more  ">
+           
+          </div>
+          <div class="read-more  ">
             <a class="text-uppercase  " href="#"
               >read more</a
             >
             <i class="fas fa-arrow-right"></i>
            </div>
-          </div>
         </div>
         </div>
       </div>
@@ -483,7 +484,7 @@
           </div>
 
 
-          <div class="card-body">
+          <div class="card-body pb-0  d-flex flex-column align-items-end justify-content-between">
             <div class="container event-content pr-0">
               <div class="row">
               <div class="time-place d-flex align-items-center justify-content-start">
@@ -515,7 +516,7 @@
               <span class="month text-capitalize">august</span>
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body pb-0 d-flex flex-column align-items-end justify-content-between ">
             <div class="container event-content   pr-0">
               <div class="row">
                   <div class="time-place d-flex align-items-center justify-content-start">
@@ -768,6 +769,22 @@
     ></script>
 
     <script>
+          $(".carousel").on("touchstart", function (event) {
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one("touchmove", function (event) {
+          const xMove = event.originalEvent.touches[0].pageX;
+          const sensitivityInPx = 5;
+
+          if (Math.floor(xClick - xMove) > sensitivityInPx) {
+            $(this).carousel("next");
+          } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+            $(this).carousel("prev");
+          }
+        });
+        $(this).on("touchend", function () {
+          $(this).off("touchmove");
+        });
+      });
       $(document).ready(function(){
     $(".scroll-top").click(function() {
         $("html, body").animate({ 
@@ -804,22 +821,7 @@
         });
       });
       //for mobile carousel swipe
-      $(".carousel").on("touchstart", function (event) {
-        const xClick = event.originalEvent.touches[0].pageX;
-        $(this).one("touchmove", function (event) {
-          const xMove = event.originalEvent.touches[0].pageX;
-          const sensitivityInPx = 5;
-
-          if (Math.floor(xClick - xMove) > sensitivityInPx) {
-            $(this).carousel("next");
-          } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
-            $(this).carousel("prev");
-          }
-        });
-        $(this).on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
+  
 
 
 
