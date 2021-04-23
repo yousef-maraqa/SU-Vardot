@@ -2,6 +2,12 @@ footer {
   background-color: #021a4e;
 }
 
+footer .footer-outer-col {
+  border-left: solid 1px #4d4d4d;
+  margin: 4rem 0;
+  padding: 0;
+}
+
 footer h5 {
   color: #e4c800;
   font-weight: bold;
@@ -21,7 +27,7 @@ footer li a {
 }
 
 footer li a:hover {
-  color: #dfdfdf !important;
+  color: #e4c800 !important;
 }
 
 footer .footer-col {
@@ -35,21 +41,14 @@ footer .footer-col {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  border-left: solid 1px #4d4d4d;
   padding-left: 1rem;
-  margin: 3.875rem 0;
   text-align: start;
 }
 
 @media only screen and (max-width: 768px) {
   footer .footer-col {
-    border-left: solid 0px transparent;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  footer .footer-col {
     margin: 1.875rem 0;
+    border-left: solid 0px transparent;
   }
 }
 
@@ -82,5 +81,9 @@ footer .follow-us {
 footer .social-links i {
   font-size: 1.1rem;
   margin-right: 1.5rem;
+}
+
+footer .social-links i:hover {
+  color: #e4c800;
 }
 /*# sourceMappingURL=footer.css.map */

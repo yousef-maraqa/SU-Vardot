@@ -11,14 +11,9 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/carousel.css" />
     <link rel="stylesheet" href="./styles/content.css" />
+    <link rel="stylesheet" href="./odometer/odometer.css" />
 
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
+ 
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -28,12 +23,15 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="sticky-top ">
+      <div class="container upper-nav">
         <div
           class="inner-container d-flex justify-content-between align-items-center"
         >
           <div class="search-box d-none d-md-none d-lg-block">
+            <a href="index.html">
+
+            
             <picture class="Logo">
               <source
                 media="(min-width:650px)"
@@ -48,6 +46,7 @@
                 style="width: auto"
               />
             </picture>
+          </a>
           </div>
           <div class="d-none d-md-none d-lg-block">
             <ul class="list-inline d-flex align-items-center social-links lg">
@@ -129,7 +128,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
         <div class="container">
           <div class="d-md-block d-lg-none">
             <a class="navbar-brand" href="#"
@@ -294,7 +293,7 @@
 <section id="news" class="">
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 d-flex ">
+        <div class="col-lg-6 d-flex " id="news-img">
          
                 <div class="col-md-6 col-xs-6 mb-xs-4 pl-0">
                 
@@ -331,7 +330,7 @@
                 </div>
             </div>
         
-        <div class="col-lg-6 col-xl-6 blogs  ">
+        <div class="col-lg-6 col-xl-6 blogs" id="news-blogs">
           <div class="container  ">
             <div class="row blog-block">
             
@@ -344,7 +343,7 @@
                   <a href="#"><h1 class="text-capitalize content-title">Smart Exhibition Upends Classical Style</h1></a> 
                    <p class="content-summary">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
                    <div class="read-more  ">
-                    <a class="text-uppercase  " href="#"
+                    <a class="text-uppercase stretched-link " href="#"
                       >read more</a
                     >
                     <i class="fas fa-arrow-right"></i>
@@ -357,7 +356,7 @@
                    <h1 class="text-capitalize content-title">Sciences University To Offer Now Undergraduate Major In Creative Writing</h1>
                    <p class="content-summary">The Department of English Language and Literature will offer a new undergraduate major in creative writing, beginning…</p>
                    <div class="read-more ">
-                    <a class="text-uppercase  " href="#"
+                    <a class="text-uppercase stretched-link" href="#"
                       >read more</a
                     >
                     <i class="fas fa-arrow-right"></i>
@@ -372,7 +371,7 @@
                     <h1 class="text-capitalize content-title">New Method Uses Heat Flow To Levitate Variety Of Objects</h1>
                     <p class="content-summary">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
                     <div class="read-more  ">
-                      <a class="text-uppercase  " href="#"
+                      <a class="text-uppercase stretched-link" href="#"
                         >read more</a
                       >
                       <i class="fas fa-arrow-right"></i>
@@ -398,24 +397,31 @@
   <div class="container">
     <div class="row">
     <div class="col-md-4">
-      <div class="info-block">
+      <div class="info-block" id="info-block-1">
          <img src="./assets/icons/group-11.svg" alt="">
-         <div class="number">90+</div>
+         <div class="number d-flex align-items-center">
+          <div class="number odometer" id="degree">0</div><span>+</span>
+         </div>
+        
          <h1 class="info-title">Profession-ready degree programs</h1>
       </div>
      
     </div>
     <div class="col-md-4">
-      <div class="info-block">
+      <div class="info-block" id="info-block-2">
         <img src="./assets/icons/group-12.svg" alt="">
-        <div class="number">#1</div>
+        <div class="number d-flex align-items-center">
+          <span>#</span>  <div class="number odometer" id="MBA">0</div>
+         </div>
         <h1 class="info-title">Our MBA for salary-to-debt ratio</h1>
      </div>
     </div>
     <div class="col-md-4">
-      <div class="info-block">
+      <div class="info-block" id="info-block-3">
         <img src="./assets/icons/noun-64173-cc.svg" alt="">
-        <div class="number">100,000</div>
+        <div class="number d-flex align-items-center">
+          <div class="number odometer" id="university">0</div><span>+</span>
+         </div>
         <h1 class="info-title">Sciences University alumni worldwide</h1>
      </div>
     </div>
@@ -464,7 +470,7 @@
            
           </div>
           <div class="read-more  ">
-            <a class="text-uppercase  " href="#"
+            <a class="text-uppercase  stretched-link" href="#"
               >read more</a
             >
             <i class="fas fa-arrow-right"></i>
@@ -497,8 +503,8 @@
               
               </div>
             </div>
-            <div class="read-more  ">
-              <a class="text-uppercase  " href="#"
+            <div class="read-more">
+              <a class="text-uppercase stretched-link" href="#"
                 >read more</a
               >
               <i class="fas fa-arrow-right"></i>
@@ -530,8 +536,8 @@
             </div>
          
           </div>
-          <div class="read-more  ">
-            <a class="text-uppercase  " href="#"
+          <div class="read-more">
+            <a class="text-uppercase stretched-link" href="#"
               >read more</a
             >
             <i class="fas fa-arrow-right"></i>
@@ -569,38 +575,49 @@
 
 
 <section id="form">
-  <div class="container">
+   
     <div class="form-box">
 
       <div class="title-wrapper text-uppercase text-center"><span class=" title-m"> get in touch</span></div>
-      <form action="" method="post">
-        <div class="form-row">
+      <form action="" method="post" id="Form">
+        <div class="row">
           <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="FullName" placeholder="Full Name">
+            <input type="text" class="form-control " id="FullName" placeholder="Full Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>error Message</small>
           </div>
     
           <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="PhoneNumber" placeholder="Phone Number">
+            <input type="text" class="form-control " id="PhoneNumber" placeholder="Phone Number">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>error Message</small>
           </div>
     
         </div>
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input type="email" class="form-control" id="Email" placeholder="Email">
+            <input type="text" class="form-control" id="Email" placeholder="Email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>error Message</small>
           </div>
         </div>
         <div class="form-row">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Message"></textarea>
+          <textarea class="form-control" id="Textarea" rows="7" placeholder="Message"></textarea>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>error Message</small>
         </div>
-    
-      </form>
-      <div class="submit text-center">
-        <a class="text-uppercase main-btn " href="#">submit</a>
+        <div class="submit text-center">
+        <button type="submit" class="text-uppercase main-btn ">submit</button>
       </div>
+      </form>
+   
       
     </div>
-    
-  </div>
+ 
   
   
 </section>
@@ -613,7 +630,7 @@
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
-      <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-0 d-flex align-items-baseline justify-content-lg-center justify-content-sm-start">
+      <div class="col-lg-3 col-md-6 footer-outer-col col-sm-6  d-flex align-items-baseline justify-content-lg-start justify-content-sm-start">
         <div class="footer-col">
           <h5 class="text-uppercase">EXPLORE</h5>
 
@@ -649,7 +666,7 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-3 col-md-6  col-sm-6 mb-4 mb-md-0 d-flex align-items-baseline justify-content-lg-center justify-content-sm-start">
+      <div class="col-lg-3 col-md-6 footer-outer-col  col-sm-6   d-flex align-items-baseline justify-content-lg-start justify-content-sm-start">
         <div class="footer-col">
         <h5 class="text-uppercase  ">QUICK LINKS</h5>
 
@@ -684,7 +701,7 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-3 col-md-6  col-sm-6 mb-4 mb-md-0 d-flex align-items-baseline justify-content-lg-center justify-content-sm-start">
+      <div class="col-lg-3 footer-outer-col col-md-6  col-sm-6  d-flex align-items-baseline justify-content-lg-start justify-content-sm-start">
         <div class="footer-col how-to">
         <h5 class="text-uppercase">HOW TO FIND US</h5>
 
@@ -715,7 +732,7 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-0 d-flex align-items-baseline justify-content-center  ">
+      <div class="col-lg-3 footer-outer-col col-md-6 col-sm-6 d-flex align-items-baseline">
         <div class="footer-col ">
        
           <picture>
@@ -767,66 +784,10 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./odometer/odometer.js" ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
 
-    <script>
-          $(".carousel").on("touchstart", function (event) {
-        const xClick = event.originalEvent.touches[0].pageX;
-        $(this).one("touchmove", function (event) {
-          const xMove = event.originalEvent.touches[0].pageX;
-          const sensitivityInPx = 5;
-
-          if (Math.floor(xClick - xMove) > sensitivityInPx) {
-            $(this).carousel("next");
-          } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
-            $(this).carousel("prev");
-          }
-        });
-        $(this).on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-      $(document).ready(function(){
-    $(".scroll-top").click(function() {
-        $("html, body").animate({ 
-            scrollTop: 0 
-        }, "slow");
-        return false;
-    });
-});
-      //search icon animation
-      $(document).ready(function () {
-        $(".search").each(function () {
-          var self = $(this);
-          var div = self.children("div");
-          var placeholder = div.children("input").attr("placeholder");
-          var placeholderArr = placeholder.split(/ +/);
-          if (placeholderArr.length) {
-            var spans = $("<div />");
-            $.each(placeholderArr, function (index, value) {
-              spans.append($("<span />").html(value + "&nbsp;"));
-            });
-            div.append(spans);
-          }
-          self.click(function () {
-            self.addClass("open");
-            setTimeout(function () {
-              self.find("input").focus();
-            }, 750);
-          });
-          $(document).click(function (e) {
-            if (!$(e.target).is(self) && !jQuery.contains(self[0], e.target)) {
-              self.removeClass("open");
-            }
-          });
-        });
-      });
-      //for mobile carousel swipe
-  
-
-
-
-
-
-    </script>
   </body>
 </html>

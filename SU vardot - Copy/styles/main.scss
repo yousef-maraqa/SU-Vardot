@@ -1,4 +1,5 @@
-@import url(../assets/fonts/fonts.css);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 $mainBlue:#021a4e;
 $mainYellow:#e4c800;
@@ -9,6 +10,7 @@ $mainYellow:#e4c800;
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
     
 }
 a{

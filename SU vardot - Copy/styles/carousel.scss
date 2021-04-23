@@ -35,7 +35,8 @@
     width: 10px !important;
     height: 10px !important;
     border-radius: 50% !important;
-    background-color:#fff !important; 
+    background-color:#fff;
+    opacity: 1;
      border: solid 1px #f3f3f3;
      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.73); 
 
@@ -50,26 +51,22 @@
      overflow: hidden;
      word-break: break-all;
      position: absolute;
-     top: 10rem;
-    right: 14rem;
+     z-index: 99;
+     top: 0;
+    right:0;
+    margin: 6% 15% 0 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     @media only screen and (max-width: 992px) {
-
-        color: #021a4e;
-       
         padding: 1rem 1rem;
         color: white;
         position: absolute;
-        top: 25%;
-        left: 25%;
+        top: 0;
+        right:  0;
         text-align: center;
-       
+        margin: 14vh 25vw 0 0;
         height: unset;
         max-width: 15rem;
-        
         font-weight: bold;
-       
-
     }
 h1{
     font-family: 'Crimson Text', serif;

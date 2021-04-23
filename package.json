@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/yousef-maraqa/ZU-Vardot.git",
   "author": "yousef-maraqa <51760186+yousef-maraqa@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "gulp": "^4.0.2"
+  }
 }

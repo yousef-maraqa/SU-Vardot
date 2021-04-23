@@ -57,6 +57,7 @@
 
 #news .blogs .news-block {
   margin-top: 1.25rem;
+  position: relative;
 }
 
 #news .blogs .news-block .date {
@@ -181,6 +182,7 @@
 
 #events .card {
   height: 100%;
+  position: relative;
 }
 
 #events .card .event-img {
@@ -296,8 +298,45 @@
           justify-content: center;
 }
 
+#form .form-group {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+#form .form-group small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+}
+
+#form .success input {
+  border-color: #2ecc71 !important;
+}
+
+#form .error input {
+  border-color: #e74c3c !important;
+}
+
+#form .success i.fa-check-circle {
+  color: #2ecc71 !important;
+  visibility: visible !important;
+}
+
+#form .error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible !important;
+}
+
+#form .error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
 #form .form-box {
-  margin: 0 3.8rem;
+  width: 59.375rem;
+  height: 38.125rem;
+  margin: auto;
   padding: 5rem 6.25rem;
   background: #f7f7f7;
 }
@@ -307,6 +346,13 @@
     margin: 0;
     padding: 5rem 1.25rem;
   }
+}
+
+#form .form-box i {
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  right: 1.3rem;
 }
 
 #form ::-webkit-input-placeholder {
@@ -331,14 +377,13 @@
 }
 
 #form .submit {
-  margin-top: 3.5rem;
+  margin: 1.875rem 0;
 }
 
 #form .submit .main-btn {
   font-size: 18px;
   font-weight: bold;
   padding: 0.875rem 2.5rem;
-  margin-top: 14rem;
   padding: 0.875rem 2.5rem;
 }
 /*# sourceMappingURL=content.css.map */

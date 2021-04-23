@@ -5,6 +5,27 @@
   outline: none;
 }
 
+.scrolled {
+  -webkit-box-shadow: 3px 3px 3px #f3f3f3;
+          box-shadow: 3px 3px 3px #f3f3f3;
+}
+
+.scrolled .upper-nav {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+header {
+  background-color: #fff;
+}
+
+header .upper-nav {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+}
+
 header .inner-container {
   margin: 2vh 0;
 }
