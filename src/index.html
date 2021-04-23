@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/group-4.png" sizes="16x16 32x32" />
+
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/css/header.css" />
+    <link rel="stylesheet" href="./styles/css/footer.css" />
+    <link rel="stylesheet" href="./styles/css/carousel.css" />
+    <link rel="stylesheet" href="./styles/css/content.css" />
+    <link rel="stylesheet" href="./odometer/odometer.css" />
+
+ 
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="sticky-top ">
+      <div class="container upper-nav">
+        <div
+          class="inner-container d-flex justify-content-between align-items-center"
+        >
+          <div class="search-box d-none d-md-none d-lg-block">
+            <a href="index.html">
+
+            
+            <picture class="Logo">
+              <source
+                media="(min-width:650px)"
+                srcset="./assets/group-4@2x.png"
+              />
+              <source media="(min-width:465px)" srcset="./assets/group-4.png" />
+              <img
+                src="./assets/group-4@3x.png"
+                alt="Flowers"
+                width="139px"
+                height="48px"
+                style="width: auto"
+              />
+            </picture>
+          </a>
+          </div>
+          <div class="d-none d-md-none d-lg-block">
+            <ul class="list-inline d-flex align-items-center social-links lg">
+              <li class="list-inline-itme">
+                <a href=""
+                  ><i
+                    class="fab fa-linkedin-in d-flex justify-content-center align-items-center"
+                  ></i>
+                </a>
+              </li>
+              <li class="list-inline-itme">
+                <a href="">
+                  <i
+                    class="fab fa-youtube d-flex justify-content-center align-items-center"
+                  ></i>
+                </a>
+              </li>
+              <li class="list-inline-itme">
+                <a href=""
+                  ><i
+                    class="fab fa-instagram d-flex justify-content-center align-items-center"
+                  ></i>
+                </a>
+              </li>
+              <li class="list-inline-itme">
+                <a href=""
+                  ><i
+                    class="fab fa-twitter d-flex justify-content-center align-items-center"
+                  ></i
+                ></a>
+              </li>
+              <li class="list-inline-itme mr-3">
+                <a href=""
+                  ><i
+                    class="fab fa-facebook-f d-flex justify-content-center align-items-center"
+                  ></i
+                ></a>
+              </li>
+
+              <div class="search-box d-none d-md-none d-lg-block">
+                <div class="search">
+                  <svg
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 24 24"
+                    width="20px"
+                    height="20px"
+                  >
+                    <g
+                      stroke-linecap="square"
+                      stroke-linejoin="miter"
+                      stroke="currentColor"
+                    >
+                      <line
+                        fill="none"
+                        stroke-miterlimit="10"
+                        x1="22"
+                        y1="22"
+                        x2="16.4"
+                        y2="16.4"
+                      />
+                      <circle
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-miterlimit="10"
+                        cx="10"
+                        cy="10"
+                        r="9"
+                      />
+                    </g>
+                  </svg>
+                  <div>
+                    <input type="text" placeholder="Search for something..." />
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+          <div class="d-md-block d-lg-none">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/group-4.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-links d-flex justify-content-evenly">
+              <li class="nav-item link-cont">
+                <a class="nav-link text-uppercase link hover" href="#">about</a>
+              </li>
+              <li class="nav-item link-cont">
+                <a class="nav-link text-uppercase link hover" href="#"
+                  >academics</a
+                >
+              </li>
+              <li class="nav-item link-cont">
+                <a class="nav-link text-uppercase link hover" href="#"
+                  >admissions</a
+                >
+              </li>
+              <li class="nav-item link-cont">
+                <a class="nav-link text-uppercase link hover" href="#"
+                  >international</a
+                >
+              </li>
+              <li class="nav-item link-cont">
+                <a class="nav-link text-uppercase link hover" href="#"
+                  >events</a
+                >
+              </li>
+              <li class="nav-item link-cont">
+                <a class="nav-link text-uppercase link hover" href="#"
+                  >contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="search-box-mb d-md-block d-lg-none">
+                 
+                  <div class="input-group mt-4 mb-2">
+                    <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <div class="d-md-block d-lg-none">
+                <ul
+                  class="list-inline d-flex align-items-center social-links lg m-4"
+                >
+                  <li class="list-inline-itme">
+                    <a href=""
+                      ><i
+                        class="fab fa-linkedin-in d-flex justify-content-center align-items-center"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-itme">
+                    <a href="">
+                      <i
+                        class="fab fa-youtube d-flex justify-content-center align-items-center"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-itme">
+                    <a href=""
+                      ><i
+                        class="fab fa-instagram d-flex justify-content-center align-items-center"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-itme">
+                    <a href=""
+                      ><i
+                        class="fab fa-twitter d-flex justify-content-center align-items-center"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-itme mr-3">
+                    <a href=""
+                      ><i
+                        class="fab fa-facebook-f d-flex justify-content-center align-items-center"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      id="demo"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+      data-interval="3000"
+     
+    >
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner"  >
+        <div class="carousel-item active">
+          <img
+            src="./assets/carousel/group-8@2x.png"
+            width="100%"
+            height="100%"
+            alt="slider1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/carousel/carousel-4.jpg"
+            width="100%"
+            height="100%"
+            alt="slider2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/carousel/carousel-5.jpg"
+            width="100%"
+            height="100%"
+            alt="slider3"
+          />
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+      <div class="overlay">
+        <h1 class="text-uppercase text-center">one of the top 10 universities in design</h1>
+      </div>
+    </div>
+        
+ 
+
+
+<section id="news" class="">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 d-flex " id="news-img">
+         
+                <div class="col-md-6 col-xs-6 mb-xs-4 pl-0">
+                
+                    <div class="news-block-img">
+                      <a href="#" target="_blank">
+                        <img src="./assets/news/c-s-howdoi_2021-04-13/c-s-howdoi@3x.png" alt="news">
+                        <div class="text-uppercase">undergraduate courses</div>
+                      </a>
+                     
+                    </div>
+                    <div class="news-block-img">
+                      <a href="#" target="_blank">
+                        <img src="./assets/news/i-stock-000014379570-large_2021-04-13/i-stock-000014379570-large@3x.png" alt="news">
+                        <div class="text-uppercase">GRADUATE COURSES</div>
+                      </a>
+                    </div>
+                 
+                </div>
+                <div class="col-md-6 col-xs-6 pr-0">
+                    <div class="news-block-img">
+                      <a href="#" target="_blank" >
+                        <img src="./assets/news/student-applying-for-federal-student-aid-f-a-f-s-a_2021-04-13 (1)/student-applying-for-federal-student-aid-f-a-f-s-a@3x.png" alt="news">
+                        <div class="text-uppercase">INTERNATIONAL STUDENTS</div>
+                      </a>
+                      
+                    </div>
+                    <div class="news-block-img">
+                      <a href="#" target="_blank">
+                        <img src="./assets/news/student-photo_2021-04-13/student-photo@3x.png" alt="news">
+                        <div class="text-uppercase">SCHOLARSHIPS</div>
+                      </a>
+                     
+                    </div>
+                </div>
+            </div>
+        
+        <div class="col-lg-6 col-xl-6 blogs" id="news-blogs">
+          <div class="container  ">
+            <div class="row blog-block">
+            
+
+              <div class="news-blogs">
+                <div class="title-wrapper text-uppercase "><span class=" title-m"> news</span></div>
+                <div class="col-md-12 pl-0 pr-0 news-border">
+                  <div class="news-block ">
+                   <div class="details">january 06,2017</div>
+                  <a href="#"><h1 class="text-capitalize content-title">Smart Exhibition Upends Classical Style</h1></a> 
+                   <p class="content-summary">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
+                   <div class="read-more  ">
+                    <a class="text-uppercase stretched-link " href="#"
+                      >read more</a
+                    >
+                    <i class="fas fa-arrow-right"></i>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-12 pl-0 pr-0 news-border">
+                 <div class="news-block  ">
+                   <div class="details">December 13, 2016</div>
+                   <h1 class="text-capitalize content-title">Sciences University To Offer Now Undergraduate Major In Creative Writing</h1>
+                   <p class="content-summary">The Department of English Language and Literature will offer a new undergraduate major in creative writing, beginning…</p>
+                   <div class="read-more ">
+                    <a class="text-uppercase stretched-link" href="#"
+                      >read more</a
+                    >
+                    <i class="fas fa-arrow-right"></i>
+                   </div>
+                  </div>
+                 </div>
+
+
+                 <div class="col-md-12 pl-0 pr-0 news-border">
+                  <div class="news-block  ">
+                    <div class="details">November 13, 2016</div>
+                    <h1 class="text-capitalize content-title">New Method Uses Heat Flow To Levitate Variety Of Objects</h1>
+                    <p class="content-summary">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
+                    <div class="read-more  ">
+                      <a class="text-uppercase stretched-link" href="#"
+                        >read more</a
+                      >
+                      <i class="fas fa-arrow-right"></i>
+                     </div>
+                   </div>
+                  </div>
+                 </div> 
+                </div>
+            
+              </div>
+            
+              
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<section id="statics">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+      <div class="info-block" id="info-block-1">
+         <img src="./assets/icons/group-11.svg" alt="">
+         <div class="number d-flex align-items-center">
+          <div class="number odometer" id="degree">0</div><span>+</span>
+         </div>
+        
+         <h1 class="info-title">Profession-ready degree programs</h1>
+      </div>
+     
+    </div>
+    <div class="col-md-4">
+      <div class="info-block" id="info-block-2">
+        <img src="./assets/icons/group-12.svg" alt="">
+        <div class="number d-flex align-items-center">
+          <span>#</span>  <div class="number odometer" id="MBA">0</div>
+         </div>
+        <h1 class="info-title">Our MBA for salary-to-debt ratio</h1>
+     </div>
+    </div>
+    <div class="col-md-4">
+      <div class="info-block" id="info-block-3">
+        <img src="./assets/icons/noun-64173-cc.svg" alt="">
+        <div class="number d-flex align-items-center">
+          <div class="number odometer" id="university">0</div><span>+</span>
+         </div>
+        <h1 class="info-title">Sciences University alumni worldwide</h1>
+     </div>
+    </div>
+    </div>
+  
+  </div>
+</section>
+
+
+
+
+ 
+
+
+
+<section id="events">
+  <div class="title-wrapper text-uppercase text-center"><span class=" title-m">  </span></div>
+  <div class="container">
+  
+    <div class="row">
+
+      <div class="col-lg-6 col-xl-4">
+      
+        <div class="card"  >
+          <img class="card-img-top event-img" src="./assets/events/img-0349-0@3x.png" alt="Card image cap"> 
+                <div class="calender-img">
+
+                  <div class="date">
+                    <span class="day">18</span>
+                    <span class="month text-capitalize">march</span>
+                  </div>
+                </div>
+
+          <div class="card-body pb-0  d-flex flex-column align-items-end justify-content-between">
+           <div class="container event-content pr-0">
+             <div class="row">
+             <div class="time-place d-flex align-items-center justify-content-start">
+               <span class="time details">2:00 p.m-4:00 p.m.</span>
+               <span class="line  mx-2"></span>
+               <div class="place text-capitalize details">ajloun campus</div>
+             </div>
+             <div class="event-title text-capitalize content-title"> Postgraduate Drop-in Evening</div>
+             <div class="content-summary">Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</div>
+       
+           </div>
+           
+          </div>
+          <div class="read-more  ">
+            <a class="text-uppercase  stretched-link" href="#"
+              >read more</a
+            >
+            <i class="fas fa-arrow-right"></i>
+           </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="card"  >
+          <img class="card-img-top" src="./assets/events/marketing-und-event@3x.png" alt="Card image cap">
+          <div class="calender-img">
+
+            <div class="date">
+              <span class="day">07</span>
+              <span class="month text-capitalize">may</span>
+            </div>
+          </div>
+
+
+          <div class="card-body pb-0  d-flex flex-column align-items-end justify-content-between">
+            <div class="container event-content pr-0">
+              <div class="row">
+              <div class="time-place d-flex align-items-center justify-content-start">
+                <span class="time details">2:00 P.M - 4:00 P.M.</span>
+                <span class="line  mx-2"></span>
+                <div class="place text-capitalize details">Irbed Campus</div>
+              </div>
+              <div class="event-title text-capitalize content-title"> Undergraduate Music Open Day</div>
+              <div class="content-summary">Music open days are aimed at candidates who have made Kingston University one of their university choices…</div>
+              
+              </div>
+            </div>
+            <div class="read-more">
+              <a class="text-uppercase stretched-link" href="#"
+                >read more</a
+              >
+              <i class="fas fa-arrow-right"></i>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="card"  >
+          <img class="card-img-top" src="./assets/events/salford-uni-alumni-events@3x.png" alt="Card image cap">
+          <div class="calender-img">
+
+            <div class="date">
+              <span class="day">20</span>
+              <span class="month text-capitalize">august</span>
+            </div>
+          </div>
+          <div class="card-body pb-0 d-flex flex-column align-items-end justify-content-between ">
+            <div class="container event-content   pr-0">
+              <div class="row">
+                  <div class="time-place d-flex align-items-center justify-content-start">
+                    <span class="time details">4:00 P.M - 6:00 P.M.</span>
+                    <span class="line mx-2"></span>
+                    <div class="place text-capitalize details">Amman Campus</div>
+                  </div>
+                  <div class="event-title text-capitalize content-title">Making Nature’ Exhibition At Wellcome Collection</div>
+                  <div class="content-summary"> The question of how humans relate to other animals has captivated, scientists, ethicists and artists for centuries...</div>
+
+            </div>
+         
+          </div>
+          <div class="read-more">
+            <a class="text-uppercase stretched-link" href="#"
+              >read more</a
+            >
+            <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="apply">
+  
+  <div class="apply-img">
+    <div class="apply-content">
+      <h1 class="apply-title">ADMISSIONS ARE NOW OPEN FOR 2017/2018 INTAKE</h1>
+
+      <a class="text-uppercase  main-btn" href="#">apply now</a>
+    </div>
+  
+  </div>
+  
+
+ 
+</section>
+
+
+
+
+
+
+<section id="form">
+   
+    <div class="form-box">
+
+      <div class="title-wrapper text-uppercase text-center"><span class=" title-m"> get in touch</span></div>
+      <form action="" method="post" id="Form">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control " id="FullName" placeholder="Full Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>error Message</small>
+          </div>
+    
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control " id="PhoneNumber" placeholder="Phone Number">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>error Message</small>
+          </div>
+    
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <input type="text" class="form-control" id="Email" placeholder="Email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>error Message</small>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+
+      
+          <textarea class="form-control" id="Textarea" rows="7" placeholder="Message"></textarea>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>error Message</small>
+        </div>
+        </div>
+        <div class="submit text-center">
+        <button type="submit" class="text-uppercase main-btn ">submit</button>
+      </div>
+      </form>
+   
+      
+    </div>
+ 
+  
+  
+</section>
+
+
+
+<footer class="  text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 footer-outer-col col-sm-6  d-flex align-items-baseline justify-content-lg-start justify-content-sm-start">
+        <div class="footer-col">
+          <h5 class="text-uppercase">EXPLORE</h5>
+
+          <ul class="list-unstyled  ">
+            <li>
+              <a href="#!" class=" ">Privacy and Cookies</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">Legal Information</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">About the University</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">News and Events</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">Research</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">Schools and Departments</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">International</a>
+            </li>
+            <li>
+              <a href="#!" class=" ">Job Vacancies</a>
+            </li>
+          </ul>
+        </div>
+       
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 footer-outer-col  col-sm-6   d-flex align-items-baseline justify-content-lg-start justify-content-sm-start">
+        <div class="footer-col">
+        <h5 class="text-uppercase  ">QUICK LINKS</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class=" ">Online Payments</a>
+          </li>
+          <li>
+            <a href="#!" class=" ">Library</a>
+          </li>
+          <li>
+            <a href="#!" class=" ">Alumni</a>
+          </li>
+          <li>
+            <a href="#!" class=" ">Community Information</a>
+          </li>
+        </ul>
+
+        <h5 class="text-uppercase my-3">USING OUR SITE</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class=" ">Accessibilty</a>
+          </li>
+          <li>
+            <a href="#!" class=" ">Freedom of Information</a>
+          </li>
+     
+        </ul>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 footer-outer-col col-md-6  col-sm-6  d-flex align-items-baseline justify-content-lg-start justify-content-sm-start">
+        <div class="footer-col how-to">
+        <h5 class="text-uppercase">HOW TO FIND US</h5>
+
+        <ul class="list-unstyled  how-to ">
+          <li class="d-flex align-items-center">
+            <i class="fas fa-phone-alt"></i>
+            <a href="#!" class=" ">+ 1 (408) 703 8738</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fas fa-phone-alt"></i>
+            <a href="#!" class=" ">+ 962 6 581 7612</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fas fa-envelope"></i>
+            <a href="#!" class=" ">info@SciencesUniversity.edu</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fas fa-envelope"></i>
+            <a href="#!" class=" ">Contact Us</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#!" class=" ">Find Us</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 footer-outer-col col-md-6 col-sm-6 d-flex align-items-baseline">
+        <div class="footer-col ">
+       
+          <picture>
+            <source media="(min-width:650px)" srcset="./assets/footer/group-19@2x.png">
+            <source media="(min-width:465px)" srcset="./assets/footer/group-19.png">
+            <img src="./assets/footer/group-19@3x.png" alt="Flowers" class="Logo"  >
+          </picture>
+          <div class="follow-us">
+            <h5 class="text-uppercase">follow us</h5>
+            <div class="social-links d-flex align-items-center">
+             <a href="#"><i class="fab fa-linkedin-in d-flex justify-content-center align-items-center"></i></a> 
+              <a href=""><i class="fab fa-youtube d-flex justify-content-center align-items-center" ></i></a>
+              <a href=""><i class="fab fa-instagram d-flex justify-content-center align-items-center" ></i></a>
+              <a href=""><i class="fab fa-twitter d-flex justify-content-center align-items-center"></i></a>
+             <a href=""><i class="fab fa-facebook-f d-flex justify-content-center align-items-center"></i></a>
+            </div>
+          </div>
+         
+      
+        </div>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center  copyright p-2"  >
+    © 2017 Sciences University. All Rights Reserved.
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./odometer/odometer.js" ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
+
+  </body>
+</html>

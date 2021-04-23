@@ -14,6 +14,7 @@ $(function () {
       const FullNameValue = FullName.value.trim();
       const PhoneNumberValue = PhoneNumber.value.trim();
       const EmailValue = Email.value.trim();
+      const TextareaValue=Textarea.value.trim();
   
       if (FullNameValue === "") {
         setErrorFor(FullName, "username can not be blank");
@@ -37,6 +38,14 @@ $(function () {
       }else{
         setSuccessFor(PhoneNumber);
       }
+
+      if (TextareaValue === "") {
+        setErrorFor(Textarea, "Text area can not be blank");
+      } else {
+        setSuccessFor(Textarea);
+      }
+
+
     }
   
     function setErrorFor(input, message) {
