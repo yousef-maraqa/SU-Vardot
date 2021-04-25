@@ -1,13 +1,23 @@
 {
-  "name": "ZU-Vardot",
+  "name": "su",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "https://github.com/yousef-maraqa/ZU-Vardot.git",
-  "author": "yousef-maraqa <51760186+yousef-maraqa@users.noreply.github.com>",
-  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "gulp": "^4.0.2"
-  }
+    "bootstrap": "^4.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yousef-maraqa/ZU-Vardot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yousef-maraqa/ZU-Vardot/issues"
+  },
+  "homepage": "https://github.com/yousef-maraqa/ZU-Vardot#readme"
 }
- 
