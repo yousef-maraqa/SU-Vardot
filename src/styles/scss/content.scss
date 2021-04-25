@@ -1,4 +1,4 @@
-@import url(./main.scss);
+ 
 #news {
   margin: 5rem 0;
   .news-block-img {
@@ -157,7 +157,7 @@
       position: relative;
     }
     .calender-img {
-      background: url(../assets/events/shape-copy@3x.png) no-repeat;
+      background: url(../../assets/events/shape-copy@3x.png) no-repeat;
       width: 4.7rem;
       height: 4.7rem;
       background-size: contain;
@@ -210,6 +210,9 @@
       no-repeat;
     height: 34.375rem;
     width: 100%;
+    @media only screen and (max-width: 768px) {
+      background-size:cover ;
+    }
     background-size: 100% 100%;
   }
   .apply-title {
@@ -281,7 +284,7 @@
     padding: 5rem 6.25rem;
     background: #f7f7f7;
     @media only screen and (max-width: 992px) {
-      margin: 0;
+      width: 91vw;
       padding: 5rem 1.25rem;
     }
     i {

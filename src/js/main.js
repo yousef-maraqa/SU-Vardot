@@ -1,16 +1,4 @@
-//on scroll animation by scrollReveal plugin
-ScrollReveal().reveal(".scrolled");
-ScrollReveal().reveal("#news-img", {
-  origin: "left",
-  duration: "2000",
-  distance: "10px",
-});
-ScrollReveal().reveal("#news-blogs", {
-  origin: "right",
-  duration: "2000",
-  distance: "10px",
-});
-
+//odometer
 $(function () {
   $.fn.isInViewport = function () {
     var elementTop = $(this).offset().top;
@@ -94,11 +82,9 @@ $(document).ready(function () {
 
 //nav sticky
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("header");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
-});
-
-//form validation
+// $(function () {
+//   $(document).scroll(function () {
+//     var $nav = $("header");
+//     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+//   });
+// });

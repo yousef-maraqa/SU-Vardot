@@ -9789,10 +9789,12 @@ a:hover {
   font-weight: 800;
   color: #e4c800;
   line-height: 1.06;
+  border: none;
 }
 
 .main-btn:hover {
-  color: #ffe100 !important;
+  background-color: #e4c800;
+  color: #021a4e;
 }
 
 .read-more {

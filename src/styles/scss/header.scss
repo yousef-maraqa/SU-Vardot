@@ -1,4 +1,4 @@
-@import url(./main.scss);
+ 
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
   outline: none;
@@ -12,7 +12,7 @@
     height: 0;
   }
 }
-header {
+header ,.upper-nav {
   background-color: #fff;
   .upper-nav {
     visibility: visible;
@@ -52,7 +52,7 @@ header {
   //navigation bar
   nav {
     background-color: #021a4e !important;
-
+padding: 0 !important;
     @media only screen and (max-width: 992px) {
       background-color: white !important;
     }
@@ -60,12 +60,16 @@ header {
       display: flex;
       width: 78%;
       margin: auto;
-
+     
       justify-content: space-between;
       align-items: center;
       .nav-link {
         color: white !important;
         font-size: 14px;
+        padding: 0 !important;
+        margin: 0.6rem 0; 
+       
+        transition:  0.5s  ease;
         font-weight: 600;
         @media only screen and (max-width: 992px) {
           color: #021a4e !important;
@@ -308,3 +312,8 @@ $textColor: #b6b6b6;
   position: sticky;
   top: 0;
 }
+.sticky .nav-links .nav-link{
+  margin: 1.5rem 0;
+ 
+}
+ 
