@@ -1,4 +1,4 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 $mainBlue: #021a4e;
 $mainYellow: #e4c800;
@@ -97,14 +97,15 @@ a:hover {
   font-weight: 800;
   color: $mainYellow;
   line-height: 1.06;
+  border: none;
   &:hover {
-    color: #ffe100 !important;
+    background-color: $mainYellow;
+    color: $mainBlue;
   }
 }
 .read-more {
   margin-bottom: 1.25rem;
   text-align: end;
-
   a {
     color: #021a4f;
     font-size: 14px;
