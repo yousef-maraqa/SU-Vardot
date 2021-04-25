@@ -5,12 +5,23 @@ footer {
     margin: 4rem 0;
     padding: 0;
   }
-  h5 {
+  h5 ,.h5 {
     color: #e4c800;
     font-weight: bold;
     margin-bottom: 1rem;
     letter-spacing: 0.93px;
+    &:hover{
+      color: #e4c800 !important;
+    }
+
   }
+  .h5{
+    font-size: 14px;
+    margin: 0 0.8rem;
+  }
+  ul{
+    word-break: break-word;
+    overflow: hidden;
   li {
     margin: 0.6rem 0;
     a {
@@ -23,6 +34,7 @@ footer {
       }
     }
   }
+}
 
   .footer-col {
     display: flex;
@@ -37,11 +49,7 @@ footer {
     text-align: start;
   }
 
-  .copyright {
-    color: #ffffff;
-    font-size: 11px;
-    background-color: #223663;
-  }
+  
   i {
     color: white;
     margin-right: 0.7rem;
@@ -69,5 +77,10 @@ footer {
         color: #e4c800;
       }
     }
+  }
+  .copyright {
+    color: #ffffff;
+    font-size: 11px;
+    background-color: #223663 !important;
   }
 }

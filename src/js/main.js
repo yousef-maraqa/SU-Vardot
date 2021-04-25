@@ -1,3 +1,7 @@
+window.addEventListener('scroll',function(){
+  var header =document.querySelector('header');
+  header.classList.toggle('sticky-full',window.scrollY>0);
+})
 //odometer
 $(function () {
   $.fn.isInViewport = function () {
@@ -80,11 +84,5 @@ $(document).ready(function () {
   });
 });
 
-//nav sticky
-
-// $(function () {
-//   $(document).scroll(function () {
-//     var $nav = $("header");
-//     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-//   });
-// });
+ 
+ 
