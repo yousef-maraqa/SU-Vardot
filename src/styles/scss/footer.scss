@@ -1,17 +1,18 @@
+@import 'colors';
 footer {
-  background-color: #021a4e;
+  background-color: $blue !important;
   .footer-outer-col {
     border-left: solid 1px #4d4d4d;
     margin: 4rem 0;
     padding: 0;
   }
   h5 ,.h5 {
-    color: #e4c800;
+    color: $yellow;
     font-weight: bold;
     margin-bottom: 1rem;
     letter-spacing: 0.93px;
     &:hover{
-      color: #e4c800 !important;
+      color: $yellow !important;
     }
 
   }
@@ -30,7 +31,7 @@ footer {
       font-weight: 600;
       color: #fff;
       &:hover {
-        color: #e4c800 !important;
+        color: $yellow !important;
       }
     }
   }
@@ -74,7 +75,7 @@ footer {
       font-size: 1.1rem;
       margin-right: 1.5rem;
       &:hover {
-        color: #e4c800;
+        color: $yellow;
       }
     }
   }

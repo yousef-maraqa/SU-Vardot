@@ -1,4 +1,4 @@
- 
+@import 'colors';
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
   outline: none;
@@ -51,7 +51,7 @@ header ,.upper-nav {
   }
   //navigation bar
   nav {
-    background-color: #021a4e !important;
+    background-color: $blue !important;
 padding: 0 !important;
     @media only screen and (max-width: 992px) {
       background-color: white !important;
@@ -72,7 +72,7 @@ padding: 0 !important;
         transition:  0.5s  ease;
         font-weight: 600;
         @media only screen and (max-width: 992px) {
-          color: #021a4e !important;
+          color: $blue !important;
         }
       }
     }
@@ -80,7 +80,7 @@ padding: 0 !important;
     .search-box-mb {
       button {
         &:hover {
-          background-color: #021a4e;
+          background-color: $blue;
         }
       }
     }

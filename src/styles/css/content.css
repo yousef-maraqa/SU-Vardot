@@ -58,7 +58,7 @@
 }
 
 #news .blogs .news-block .date {
-  color: #021a4f;
+  color: #021a4e;
   font-size: 14px;
 }
 
@@ -242,7 +242,7 @@
   font-weight: 800;
   line-height: 1.59;
   text-align: center;
-  color: #021a4f;
+  color: #021a4e;
   text-align: center;
   max-width: 76rem;
 }
@@ -283,7 +283,7 @@
   visibility: hidden;
   position: absolute;
   bottom: 0px;
-  left: 5px;
+  left: 1rem;
 }
 
 #form .success input {
@@ -292,6 +292,7 @@
 
 #form .error input {
   border-color: #e74c3c !important;
+  margin: 0.5rem 0;
 }
 
 #form .success i.fa-check-circle {
