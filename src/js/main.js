@@ -1,3 +1,13 @@
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 window.addEventListener('scroll',function(){
   var header =document.querySelector('header');
   header.classList.toggle('sticky-full',window.scrollY>0);
@@ -45,17 +55,7 @@ $(".carousel").on("touchstart", function (event) {
     $(this).off("touchmove");
   });
 });
-$(document).ready(function () {
-  $(".scroll-top").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      "slow"
-    );
-    return false;
-  });
-});
+ 
 //search icon animation
 $(document).ready(function () {
   $(".search").each(function () {

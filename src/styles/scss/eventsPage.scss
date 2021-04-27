@@ -32,14 +32,17 @@
     width: 100%;
     height: auto;
   }
+  i{
+    color: $yellow;
+  }
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-    font-family: Font Awesome\ 5 Free;
-    float: left;
-    padding-right: 0.5rem;
-    color: #6c757d;
-    content: "\f6b6";
-    font-weight: 900;
+// .breadcrumb-item + .breadcrumb-item::before {
+//     font-family: Font Awesome\ 5 Free;
+//     float: left;
+//     padding-right: 0.5rem;
+//     color: #6c757d;
+//     content: "\f6b6";
+//     font-weight: 900;
     
-  }
+//   }

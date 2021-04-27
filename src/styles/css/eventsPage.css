@@ -1,4 +1,5 @@
 #img-title {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   position: relative;
 }
@@ -6,7 +7,8 @@
 #img-title picture img {
   width: 100%;
   height: 68vh;
-  filter: brightness(30%);
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
 }
 
 #img-title .event-title {
@@ -33,12 +35,7 @@
   height: auto;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-  font-family: Font Awesome\ 5 Free;
-  float: left;
-  padding-right: 0.5rem;
-  color: #6c757d;
-  content: "\f6b6";
-  font-weight: 900;
+.event-content i {
+  color: #e4c800;
 }
 /*# sourceMappingURL=eventsPage.css.map */

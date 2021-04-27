@@ -45,9 +45,16 @@ footer ul li a:hover {
 }
 
 footer .footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
-  flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   padding-left: 1rem;
   text-align: start;
 }

@@ -5,7 +5,8 @@
 }
 
 .scrolled {
-  box-shadow: 3px 3px 3px #f3f3f3;
+  -webkit-box-shadow: 3px 3px 3px #f3f3f3;
+          box-shadow: 3px 3px 3px #f3f3f3;
 }
 
 .scrolled .upper-nav {
@@ -72,11 +73,17 @@ header nav, .upper-nav nav {
 }
 
 header nav .nav-links, .upper-nav nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 78%;
   margin: auto;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav .nav-links .nav-link, .upper-nav nav .nav-links .nav-link {
@@ -84,6 +91,7 @@ header nav .nav-links .nav-link, .upper-nav nav .nav-links .nav-link {
   font-size: 14px;
   padding: 0 !important;
   margin: 0.6rem 0;
+  -webkit-transition: 0.5s  ease;
   transition: 0.5s  ease;
   font-weight: 600;
 }
@@ -99,10 +107,15 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
 }
 
 .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease 0.6s;
   transition: all 0.3s ease 0.6s;
 }
 
@@ -114,13 +127,16 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
   display: block;
   color: #b6b6b6;
   stroke-width: 2;
-  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  -webkit-transition: all 0.3s ease 0.6s;
   transition: all 0.3s ease 0.6s;
 }
 
 .search > div {
   position: relative;
   width: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15) 0.5s;
   transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15) 0.5s;
 }
 
@@ -142,6 +158,7 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
   opacity: 0;
   z-index: 1;
   visibility: hidden;
+  -webkit-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
 }
 
@@ -164,6 +181,8 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
 .search > div > div {
   white-space: nowrap;
   color: #b6b6b6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -173,27 +192,34 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
   opacity: 0;
   display: block;
   visibility: hidden;
-  transform: translate(0, 12px);
+  -webkit-transform: translate(0, 12px);
+          transform: translate(0, 12px);
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .search > div > div span:nth-child(1) {
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .search > div > div span:nth-child(2) {
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .search > div > div span:nth-child(3) {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .search.open {
   cursor: default;
   border-radius: 8px;
-  transition-delay: 0s;
-  box-shadow: 0 0px 6px -2px rgba(0, 0, 0, 0.18);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-box-shadow: 0 0px 6px -2px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0px 6px -2px rgba(0, 0, 0, 0.18);
 }
 
 @media only screen and (max-width: 768px) {
@@ -205,37 +231,45 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
 
 .search.open svg {
   opacity: 0.4;
-  transform: rotate(0deg);
-  transition-delay: 0s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .search.open > div {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
   width: 200px;
 }
 
 .search.open > div > div span {
   opacity: 1;
   visibility: visible;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .search.open > div > div span:nth-child(1) {
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .search.open > div > div span:nth-child(2) {
-  transition-delay: 0.45s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
 }
 
 .search.open > div > div span:nth-child(3) {
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .search.open > div input {
   opacity: 1;
   visibility: visible;
-  transition-delay: 0.75s;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
 }
 
 .hover:after {
@@ -246,13 +280,18 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
   right: 0;
   width: 100%;
   height: 2px;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   background-color: #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .hover:hover:after {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 #phone-search {
@@ -270,7 +309,8 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
 }
 
 #phone-search input.form-control:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 1.5px solid #e3e6ed;
   background-color: #f7f8fd;
   letter-spacing: 1px;
@@ -282,7 +322,8 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
 }
 
 #phone-search .btn-primary:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #phone-search .text {
@@ -318,8 +359,12 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
 
 @media screen and (max-width: 450px) {
   #phone-search .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
   #phone-search .price {
@@ -328,12 +373,9 @@ header nav .search-box-mb button:hover, .upper-nav nav .search-box-mb button:hov
   }
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-}
-
-.sticky-full .nav-links .nav-link {
-  margin: 1.5rem 0;
+@media only screen and (min-width: 768px) {
+  .sticky-full .nav-links .nav-link {
+    margin: 1.5rem 0;
+  }
 }
 /*# sourceMappingURL=header.css.map */

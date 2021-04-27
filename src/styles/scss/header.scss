@@ -308,12 +308,10 @@ $textColor: #b6b6b6;
     }
   }
 }
-.navbar {
-  position: sticky;
-  top: 0;
-}
 .sticky-full .nav-links .nav-link{
-  margin: 1.5rem 0;
+  @media only screen and (min-width: 768px) {
+    margin: 1.5rem 0;
+  }
  
 }
  
