@@ -1,13 +1,3 @@
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
 window.addEventListener('scroll',function(){
   var header =document.querySelector('header');
   header.classList.toggle('sticky-full',window.scrollY>0);

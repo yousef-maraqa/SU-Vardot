@@ -10844,11 +10844,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none !important;
-  color: #e4c800;
 }
 
 .title {

@@ -227,12 +227,6 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 992px) {
-  #events .card {
-    margin-bottom: 3rem;
-  }
-}
-
 #events .line {
   width: 1.9px;
   height: 19px;

@@ -52,7 +52,7 @@
   z-index: 99;
   top: 0;
   right: 0;
-  margin: 6% 15% 0 0;
+  margin: 8rem 14rem 0 0;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
@@ -65,7 +65,7 @@
     top: 0;
     right: 0;
     text-align: center;
-    margin: 14vh 25vw 0 0;
+    margin: 5rem 1rem 0 0;
     height: unset;
     max-width: 15rem;
     font-weight: bold;
