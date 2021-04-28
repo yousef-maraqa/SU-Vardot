@@ -8,6 +8,12 @@ footer .footer-outer-col {
   padding: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  footer .footer-outer-col {
+    margin: 0;
+  }
+}
+
 footer h5, footer .h5 {
   color: #e4c800;
   font-weight: bold;
