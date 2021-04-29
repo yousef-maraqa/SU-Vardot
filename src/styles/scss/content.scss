@@ -172,11 +172,7 @@
     align-items: center;
     flex-flow: column;
     margin: 1.59rem 0;
-    /* height: 3rem; */
-    /* width: 4.3rem; */
-    /* justify-content: end; */
     line-height: 1.2;
-
     .day {
       font-size: 18px;
       font-weight: 800;
@@ -212,6 +208,10 @@
   height: 35rem;
   width: 100%;
   object-fit: fill;
+  @media only screen and (max-width: 768px) {
+    object-fit: cover;
+
+  }
  }
 
   }

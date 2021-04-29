@@ -72,6 +72,12 @@
   }
 }
 
+@media all and (orientation: landscape) {
+  .overlay {
+    margin: 3rem 1rem 0 0;
+  }
+}
+
 .overlay h1 {
   font-family: "Crimson Text", serif;
   line-height: 1.63;

@@ -211,9 +211,6 @@
       -ms-flex-flow: column;
           flex-flow: column;
   margin: 1.59rem 0;
-  /* height: 3rem; */
-  /* width: 4.3rem; */
-  /* justify-content: end; */
   line-height: 1.2;
 }
 
@@ -248,6 +245,13 @@
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+@media only screen and (max-width: 768px) {
+  #apply picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 #apply .apply-title {
