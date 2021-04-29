@@ -4,17 +4,29 @@
   const PhoneNumber = document.getElementById("PhoneNumber");
   const Email = document.getElementById("Email");
   const Textarea = document.getElementById("Textarea");
-if (Form.addEventListener) {
+// if (Form.addEventListener) {
+//   Form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     checkInputs();
+//   });
+// }else{
+//   Form.attchEvent("onsubmit", (e) => {
+//     e.preventDefault();
+//     checkInputs();
+//   });
+
+try {
   Form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        checkInputs();
+      });
+} catch (error) {
+    Form.attchEvent("onsubmit", (e) => {
     e.preventDefault();
     checkInputs();
   });
-}else{
-  Form.attchEvent("onsubmit", (e) => {
-    e.preventDefault();
-    checkInputs();
-  });
-}
+};
+
   function checkInputs() {
     const FullNameValue = FullName.value.trim();
     const PhoneNumberValue = PhoneNumber.value.trim();

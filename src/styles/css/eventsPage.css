@@ -1,31 +1,3 @@
-#img-title {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  position: relative;
-}
-
-#img-title picture img {
-  width: 100%;
-  height: 68vh;
-  -webkit-filter: brightness(30%);
-          filter: brightness(30%);
-}
-
-#img-title .event-title {
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 33%;
-  margin-top: 10rem;
-}
-
-#img-title svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .breadcrumb {
   background-color: #fff !important;
 }
