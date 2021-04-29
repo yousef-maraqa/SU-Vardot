@@ -1,4 +1,4 @@
- @import './colors' ;
+@import "./colors";
 
 #news {
   margin: 5rem 0;
@@ -212,7 +212,7 @@
     height: 34.375rem;
     width: 100%;
     @media only screen and (max-width: 768px) {
-      background-size:cover ;
+      background-size: cover;
     }
     background-size: 100% 100%;
   }
@@ -261,10 +261,12 @@
   }
   .success input {
     border-color: #2ecc71 !important;
+    margin: 0.5rem 0;
+
   }
   .error input {
     border-color: #e74c3c !important;
-margin: 0.5rem 0;
+    margin: 0.5rem 0;
   }
   .success i.fa-check-circle {
     color: #2ecc71 !important;
@@ -273,7 +275,6 @@ margin: 0.5rem 0;
   .error i.fa-exclamation-circle {
     color: #e74c3c;
     visibility: visible !important;
-    
   }
   .error small {
     color: #e74c3c;
@@ -293,8 +294,8 @@ margin: 0.5rem 0;
     i {
       visibility: hidden;
       position: absolute;
-      top: 20%;
-      right: 1.3rem;
+      top: 1.2rem;
+      right: 1.2rem;
     }
   }
   ::placeholder {

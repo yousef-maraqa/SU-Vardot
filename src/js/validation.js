@@ -1,14 +1,20 @@
-$(function () {
+ $(function () {
   const Form = document.getElementById("Form");
   const FullName = document.getElementById("FullName");
   const PhoneNumber = document.getElementById("PhoneNumber");
   const Email = document.getElementById("Email");
   const Textarea = document.getElementById("Textarea");
-
+if (Form.addEventListener) {
   Form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkInputs();
   });
+}else{
+  Form.attchEvent("onsubmit", (e) => {
+    e.preventDefault();
+    checkInputs();
+  });
+}
   function checkInputs() {
     const FullNameValue = FullName.value.trim();
     const PhoneNumberValue = PhoneNumber.value.trim();
@@ -56,6 +62,7 @@ $(function () {
   function setSuccessFor(input) {
     const groupControl = input.parentElement;
     groupControl.classList.remove("error");
+    
     groupControl.classList.add("success");
   }
 
