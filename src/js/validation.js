@@ -15,18 +15,15 @@
 //     checkInputs();
 //   });
 
-try {
-  Form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        checkInputs();
-      });
-} catch (error) {
-    Form.attchEvent("onsubmit", (e) => {
-    e.preventDefault();
+ 
+  
+
+  $( "form" ).on( "submit", function( event ) {
+    event.preventDefault();
     checkInputs();
   });
-};
-
+  
+  
   function checkInputs() {
     const FullNameValue = FullName.value.trim();
     const PhoneNumberValue = PhoneNumber.value.trim();

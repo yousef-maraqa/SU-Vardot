@@ -202,20 +202,17 @@
 }
 
 #apply {
-  picture{
-    position: relative;
- img{
-  height: 35rem;
-  width: 100%;
-  object-fit: fill;
-  @media only screen and (max-width: 768px) {
-    object-fit: cover;
-
+  position: relative;
+  picture {
+    img {
+      height: 35rem;
+      width: 100%;
+      object-fit: fill;
+      @media only screen and (max-width: 768px) {
+        object-fit: cover;
+      }
+    }
   }
- }
-
-  }
-
 
   .apply-title {
     text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
@@ -266,7 +263,6 @@
   .success input {
     border-color: #2ecc71 !important;
     margin: 0.5rem 0;
-
   }
   .error input {
     border-color: #e74c3c !important;

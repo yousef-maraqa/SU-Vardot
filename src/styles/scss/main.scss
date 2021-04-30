@@ -11,6 +11,8 @@ body {
 }
 a {
   text-decoration: none !important;
+ 
+
 }
  
 .title {
@@ -152,4 +154,20 @@ a:hover {
     bottom: 0;
     left: 0;
   }
+}
+
+.events-chunk{ display: none !important; ;
+}
+#loadMore {
+  color:green;
+  cursor:pointer;
+}
+#showLess {
+  color:red;
+  cursor:pointer;
+}
+.visuallyhidden{
+  font-size: 0;
+  visibility: hidden;
+  display: none;
 }

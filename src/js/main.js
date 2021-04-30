@@ -75,4 +75,13 @@ $(document).ready(function () {
 });
 
  
- 
+ //load more
+ $(function () {
+  x=1;
+  $('.events-chunk').slice(0, 1).show();
+  $('#loadMore').on('click', function (e) {
+      e.preventDefault();
+      x = x+1;
+      $('.events-chunk').slice(0, x).slideDown();
+  });
+});
