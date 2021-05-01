@@ -36,7 +36,8 @@
   background-color: #fff;
   opacity: 1;
   border: solid 1px #f3f3f3;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.73);
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.73);
 }
 
 .overlay {
@@ -52,7 +53,8 @@
   top: 0;
   right: 0;
   margin: 8rem 14rem 0 0;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 992px) {

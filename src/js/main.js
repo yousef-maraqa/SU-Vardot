@@ -76,12 +76,16 @@ $(document).ready(function () {
 
  
  //load more
- $(function () {
-  x=1;
-  $('.events-chunk').slice(0, 1).show();
-  $('#loadMore').on('click', function (e) {
+ $( document ).ready(function () {
+  $(".moreBox").slice(0, 3).show();
+    if ($(".blogBox:hidden").length != 0) {
+      $("#loadMore").show();
+    }   
+    $("#loadMore").on('click', function (e) {
       e.preventDefault();
-      x = x+1;
-      $('.events-chunk').slice(0, x).slideDown();
+      $(".moreBox:hidden").slice(0, 6).slideDown();
+      if ($(".moreBox:hidden").length == 0) {
+        $("#loadMore").fadeOut('slow');
+      }
+    });
   });
-});

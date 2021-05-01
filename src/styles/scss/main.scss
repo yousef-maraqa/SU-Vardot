@@ -1,6 +1,11 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import 'colors';
+// @import '../../../node_modules/font-awesome/scss/variables';
 
+
+$fa-font-path: "../../../node_modules/font-awesome/fonts/";
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+ 
 * {
   padding: 0;
   margin: 0;
@@ -155,19 +160,19 @@ a:hover {
     left: 0;
   }
 }
-
-.events-chunk{ display: none !important; ;
-}
-#loadMore {
-  color:green;
-  cursor:pointer;
-}
-#showLess {
-  color:red;
-  cursor:pointer;
-}
 .visuallyhidden{
   font-size: 0;
   visibility: hidden;
   display: none;
+}
+
+#loadMore{
+  cursor:pointer;
+  margin: 5rem 0;
+  width: 100%;
+  text-align: center;
+  .main-btn{
+    padding: 1.5rem 2.25rem;
+    font-size: 30px;
+  }
 }
