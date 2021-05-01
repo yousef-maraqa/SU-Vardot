@@ -35,15 +35,6 @@ header .inner-container, .upper-nav .inner-container {
   }
 }
 
-header .social-links i, .upper-nav .social-links i {
-  width: 24px;
-  height: 24px;
-  background-color: #b6b6b6;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-}
-
 header .social-links .social-links:nth-child(5), .upper-nav .social-links .social-links:nth-child(5) {
   margin-right: 1.875rem;
 }

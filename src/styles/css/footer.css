@@ -92,12 +92,13 @@ footer .follow-us {
   margin: 2rem 0;
 }
 
-footer .social-links i {
+footer .social-links .social-footer {
   font-size: 1.1rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  color: #fff;
 }
 
-footer .social-links i:hover {
+footer .social-links .social-footer:hover {
   color: #e4c800;
 }
 

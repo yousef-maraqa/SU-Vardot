@@ -3,8 +3,6 @@
 // @import '../../../node_modules/font-awesome/scss/variables';
 
 
-$fa-font-path: "../../../node_modules/font-awesome/fonts/";
-@import "../../../node_modules/font-awesome/scss/font-awesome";
  
 * {
   padding: 0;
@@ -16,8 +14,16 @@ body {
 }
 a {
   text-decoration: none !important;
- 
-
+}
+.social{
+  width: 24px;
+  height: 24px;
+  background-color: #b6b6b6;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+padding-left: 0.5rem;
 }
  
 .title {
