@@ -1,22 +1,21 @@
 @import url(../../assets/fonts/fonts.css);
 @import url(./main.css);
-
-#demo {
+// carousel main settings
+#carousel {
   .carousel-inner {
     height: 78vh;
     @media only screen and (max-width: 992px) {
       height: 40vh;
     }
     img {
-   object-fit: fill;
+      object-fit: fill;
       width: 100%;
       height: 78%;
       @media only screen and (max-width: 992px) {
         height: 44%;
         object-fit: cover;
-    object-position: center;
+        object-position: center;
       }
-   
     }
   }
 }
@@ -24,20 +23,9 @@
   height: 100vh;
   min-height: 300px;
   background: no-repeat center scroll;
-
   background-size: cover;
 }
-
-.carousel-indicators li {
-  width: 10px !important;
-  height: 10px !important;
-  border-radius: 50% !important;
-  background-color: #fff;
-  opacity: 1;
-  border: solid 1px #f3f3f3;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.73);
-}
-
+// carousel h1 overlay
 .overlay {
   width: 30.688rem;
   height: 20.125rem;
@@ -64,10 +52,8 @@
     max-width: 15rem;
     font-weight: bold;
   }
-  // @media all and (orientation: landscape) {
-  //   margin: 3rem 1rem 0 0;
 
-  // }
+
   h1 {
     font-family: "Crimson Text", serif;
     line-height: 1.63;
@@ -79,16 +65,21 @@
     }
   }
 }
-/* .carousel-indicators li {
-     background-color: #fff !important;
- }
-  .active {
-    background-color: red !important;
-}*/
+//carousel coustum design 
+
 .carousel-indicators {
   bottom: 15px !important;
+  li{
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #fff;
+  opacity: 1;
+  border: solid 1px #f3f3f3;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.73);
+  }
+  .active{
+    background-color: transparent !important;
+  }
 }
 
-.carousel-indicators .active {
-  background-color: transparent !important;
-}
