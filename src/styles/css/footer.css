@@ -99,7 +99,7 @@ footer .social-links .social-footer {
 }
 
 footer .social-links .social-footer:hover {
-  color: #e4c800;
+  color: #e4c800 !important;
 }
 
 footer .copyright {

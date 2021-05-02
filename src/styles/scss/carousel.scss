@@ -8,11 +8,13 @@
       height: 40vh;
     }
     img {
-      background-size: cover;
+   object-fit: fill;
       width: 100%;
       height: 78%;
       @media only screen and (max-width: 992px) {
-        height: 39%;
+        height: 44%;
+        object-fit: cover;
+    object-position: center;
       }
    
     }

@@ -10862,6 +10862,11 @@ a {
   padding-left: 0.5rem;
 }
 
+.social:hover {
+  color: white !important;
+  background-color: #021a4e;
+}
+
 .title {
   color: #021a4e;
   border-bottom: 3px solid #021a4e;

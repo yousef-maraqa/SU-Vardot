@@ -249,6 +249,9 @@
 }
 
 #form {
+  input{
+    border-radius: 0 !important;
+  }
   .form-group {
     margin-bottom: 0;
     position: relative;

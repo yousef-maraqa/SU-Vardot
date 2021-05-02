@@ -11,14 +11,19 @@
 }
 
 #demo .carousel-inner img {
-  background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   height: 78%;
 }
 
 @media only screen and (max-width: 992px) {
   #demo .carousel-inner img {
-    height: 39%;
+    height: 44%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 

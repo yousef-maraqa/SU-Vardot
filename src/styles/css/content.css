@@ -303,6 +303,10 @@
           justify-content: center;
 }
 
+#form input {
+  border-radius: 0 !important;
+}
+
 #form .form-group {
   margin-bottom: 0;
   position: relative;
