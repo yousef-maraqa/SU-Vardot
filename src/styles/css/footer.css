@@ -11,6 +11,7 @@ footer .footer-outer-col {
 @media only screen and (max-width: 600px) {
   footer .footer-outer-col {
     margin: 0;
+    border-left: solid 0px transparent;
   }
 }
 
@@ -55,6 +56,8 @@ footer .toggle:before {
   font-family: 'Font Awesome 5 Free';
   content: "\f063";
   font-weight: 600;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   float: right;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -78,22 +81,10 @@ footer .footer-col {
 @media only screen and (max-width: 768px) {
   footer .footer-col {
     margin: 1.875rem 0;
-    border-left: solid 0px transparent;
   }
 }
 
-footer ul.show ~ .toggle:before {
-  font-family: 'Font Awesome 5 Free';
-  content: "\f063";
-  font-weight: 600;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  float: right;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-footer .collapsed:before {
+footer a[aria-expanded="true"]:before {
   font-family: 'Font Awesome 5 Free';
   content: "\f063";
   font-weight: 600;
