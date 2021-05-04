@@ -1,22 +1,15 @@
+ 
+ 
  $(function () {
+
+var PhoneNumber = document.querySelector("#PhoneNumber");
+window.intlTelInput(PhoneNumber, {
+ Sting:'aggressive'
+});
   const Form = document.getElementById("Form");
   const FullName = document.getElementById("FullName");
-  const PhoneNumber = document.getElementById("PhoneNumber");
   const Email = document.getElementById("Email");
   const Textarea = document.getElementById("Textarea");
-// if (Form.addEventListener) {
-//   Form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     checkInputs();
-//   });
-// }else{
-//   Form.attchEvent("onsubmit", (e) => {
-//     e.preventDefault();
-//     checkInputs();
-//   });
-
- 
-  
 
   $( "form" ).on( "submit", function( event ) {
     event.preventDefault();
@@ -45,9 +38,12 @@
     }
 
     if (PhoneNumberValue === "") {
-      setErrorFor(PhoneNumber, "Phone number can not be blank");
-    } else if (!isPhoneNum(PhoneNumberValue)) {
-      setErrorFor(PhoneNumber, "Phone number is not valid");
+      // console.log(PhoneNumber);
+      // setErrorFor(PhoneNumber, "Phone number can not be blank");
+    }
+     else if (!isPhoneNum(PhoneNumberValue)) {
+      setErrorFor(PhoneNumber, `phone number can not be blank`);
+      
     } else {
       setSuccessFor(PhoneNumber);
     }
@@ -84,3 +80,4 @@
     return re.test(num);
   }
 });
+

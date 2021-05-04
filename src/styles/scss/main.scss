@@ -133,7 +133,8 @@ a:hover {
   a {
     color: $blue;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bold; 
+    
   }
   i {
     opacity: 0;
@@ -149,7 +150,12 @@ a:hover {
       width: 14px;
       margin-left: 0.4rem;
     }
+    &:hover ~ h3{
+      color: red !important;
+    }
+     
   }
+
 }
 //atom for read more/icon effect  end
 
@@ -198,4 +204,19 @@ a:hover {
     padding: 1.5rem 2.25rem;
     font-size: 30px;
   }
+}
+
+// .iti__flag {background-image: url("../../../node_modules/intl-tel-input/");}
+
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+//   .iti__flag {background-image: url("path/to/flags@2x.png");}
+// }
+.hide{
+  display: none;
+  visibility: hidden;
+  font-size: 0;
+}
+ 
+.btn:focus {
+  box-shadow: none;
 }

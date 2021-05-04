@@ -1,33 +1,36 @@
+
+
 window.addEventListener('scroll',function(){
   var header =document.querySelector('header');
   header.classList.toggle('sticky-full',window.scrollY>0);
 })
-//odometer
-$(function () {
-  $.fn.isInViewport = function () {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
+ 
 
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-  };
-
-  $(window).on("resize scroll", function () {
-    $(".odometer").each(function () {
-      if ($(this).isInViewport()) {
-        setTimeout(function () {
+// odometer
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+$(window).on('resize scroll', function() {
+    if ($('#degree').isInViewport()) {
+        setTimeout(function(){
           $("#degree").html(90);
+        }, 0)
+    }
+    if ($('#MBA').isInViewport()) {
+        setTimeout(function(){
           $("#MBA").html(1);
+        }, 0)
+    }
+    if ($('#university').isInViewport()) {
+        setTimeout(function(){
           $("#university").html(100000);
-        }, 0);
-      } else {
-      }
-    });
-  });
+        }, 0)
+    }
 });
-
 //for swipping carousel on phones
 $(".carousel").on("touchstart", function (event) {
   const xClick = event.originalEvent.touches[0].pageX;
@@ -89,3 +92,10 @@ $(document).ready(function () {
       }
     });
   });
+  var maxLength = 500;
+$('textarea').keyup(function() {
+  var length = $(this).val().length;
+  var length = maxLength-length;
+  $('#chars').text(length);
+});
+
