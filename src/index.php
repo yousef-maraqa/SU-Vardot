@@ -1,6 +1,6 @@
 <?php 
 require './classes/Database.php';
-$database = $Database; 
+$database = new Database; 
 echo $database;
 ?>
 
