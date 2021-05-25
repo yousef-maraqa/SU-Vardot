@@ -38,17 +38,17 @@ if(isset($_POST['submit']))
             <div class="form-wrap">
                 <h1>Login</h1>
                 <p>Please fill in your credentials to login.</p>
-                <span class="error" style="display: block;text-align: center;"><?php echo $form_err; ?></span>
-                <form  autocomplete="off" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <span class="error" style="display: block;text-align: center;"></span>
+                <form  autocomplete="off"  method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                         <label>Username / name</label>
-                        <input type="text" name="name" class="form-control" value="<?php echo $username; ?>">
-                        <span class="help-block"><?php echo $username_err; ?></span>
+                        <input type="text" name="name" class="form-control" >
+                        <span class="help-block"></span>
                     </div>
-                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                    <div class="form-group">
                         <label>Password</label>
                         <input type="password" name="password" class="form-control">
-                        <span class="help-block"><?php echo $password_err; ?></span>
+                        <span class="help-block"> </span>
                     </div>
                     <button type="submit" class="btn btn-primary">login</button>
 
