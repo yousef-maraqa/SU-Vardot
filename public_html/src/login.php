@@ -1,7 +1,12 @@
 <?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 require_once('./classes/Database.php');
 $database = new Database;
+
  
 if(isset($_POST['submit']))
 {
@@ -12,10 +17,11 @@ if(isset($_POST['submit']))
         $database->query('SELECT name , password FROM users');
         $row =$database->resultset();
        if ($row['name']==$name && $row['password']==$password) {
-           $_SESSION["loggedin"]=true;
-           $_SESSION['username']=$name;
-           //redirect to dashboard
-           header("location: ./admin/index.php");
+        //    $_SESSION["loggedin"]=true;
+        //    $_SESSION['username']=$name;
+        //    //redirect to dashboard
+           
+           header("location: /admin/index.php");
        }
        else{
            print 'not valid';
